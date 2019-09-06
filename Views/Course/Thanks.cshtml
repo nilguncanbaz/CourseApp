@@ -7,20 +7,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Thanks</title>
+    <link rel="stylesheet" href="/modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/style.css">
 </head>
 <body>
-    
-    <h2>Merhaba, @Model.Name</h2>
-    <hr>
-    
-    @if(Model.Confirm==true) {
-        <span>Kursa katılmış olduğunuzdan dolayı mutlu olduk.</span>
-        <div>
-            Diğer katılımcıları <a asp-action="List"> görüntüle.</a>
+     <div class="container m-4">
+        <div class="card max-auto" style="width:500px;">
+            <div class="card-header">
+                 Merhaba, @Model.Name
+            </div>
+            <div class="card-body">
+                   @if(Model.Confirm==true) {
+                        <span>Kursa katılmış olduğunuzdan dolayı mutlu olduk.</span>
+                        <div>
+                            Diğer katılımcıları <a asp-action="List"> görüntüle.</a>
+                        </div>
+                    }else {
+                        <span>Üzüldük. Umarım fikriniz değişir.</span>
+                    }
+            </div>
         </div>
-    }else {
-        <span>Üzüldük. Umarım fikriniz değişir.</span>
-    }
-
+    </div>
 </body>
 </html>

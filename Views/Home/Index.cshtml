@@ -9,13 +9,20 @@
     <link rel="stylesheet" href="~/css/style.css">
 </head>
 <body>   
-        <p>
-            @ViewBag.Greeting
-            @ViewBag.UserName, Nasılsın ?
-        </p>
-        <p>Umarım kurslarımızdan memnunsunuzdur...</p> 
-        <p>
-            <a asp-action="apply" asp-controller="course">Başvuru Yap</a>
-        </p>
+    <div class="container m-4">
+        <div class="card max-auto" style="width:500px;">
+            <div class="card-header">
+                 @ViewBag.Greeting @ViewBag.UserName, Nasılsın ?
+            </div>
+            <div class="card-body">
+                <div class="cadr-text">
+                    <p>Umarım kurslarımızdan memnunsunuzdur...</p> 
+                    <a asp-action="apply" asp-controller="course" class="btn btn-primary">Başvuru Yap</a>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
 </body>
 </html>
