@@ -28,9 +28,15 @@ namespace CourseApp.Controllers
         public IActionResult Apply(Student student)
         {
             // Model Binding
-            // database kayıt
-            Repository.AddStudent(student);
-            return View("Thanks", student);
+            if(ModelState.IsValid){
+                 Repository.AddStudent(student);//student model içerisinde tanımlanan 
+                return View("Thanks", student);//değişkenlerin tutulduğubir class 
+       
+            }
+            else
+            {
+                return View(student);
+            }
         }
 
         public IActionResult Details()

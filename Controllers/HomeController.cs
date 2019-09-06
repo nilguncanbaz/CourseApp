@@ -13,7 +13,7 @@ namespace CourseApp.Controllers
             int saat = DateTime.Now.Hour;
 
             ViewBag.Greeting = saat > 12 ? "İyi günler" : "Günaydın";
-            ViewBag.UserName = "Sadık";
+            ViewBag.UserName = "Nilgün";
 
             return View();
         }
