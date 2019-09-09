@@ -30,7 +30,7 @@ namespace CourseApp.Controllers
             // Model Binding
             if(ModelState.IsValid){
                  Repository.AddStudent(student);//student model içerisinde tanımlanan 
-                return View("Thanks", student);//değişkenlerin tutulduğubir class 
+                return View("Thanks", student);//değişkenlerin tutulduğu bir class 
        
             }
             else
@@ -39,14 +39,9 @@ namespace CourseApp.Controllers
             }
         }
 
-        public IActionResult Details()
+        public IActionResult Details(int courseid, string sortby)
         {
-            var course = new Course();
-            course.Name = "Core Mvc Kursu";
-            course.description = "güzel bir kurs";
-            course.isPublished = true;
-
-            return View(course);
+           return Content("id = " + courseid + " sort by : " + sortby);
         }
 
         // localhost:5000/course/list => course/list.cshtml
