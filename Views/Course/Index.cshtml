@@ -1,12 +1,18 @@
+@model Course
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Course</title>
+    <title>Index</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">  
 </head>
 <body>
-    course/index view
+
+    <h1>@(((Course)ViewData["course"]).Name)</h1>
+    <h1>@(((Course)ViewBag.course))</h1>
+    <h1>@ViewBag.count</h1>
+    <h2>@Model.Name </h2> 
+    
 </body>
 </html>

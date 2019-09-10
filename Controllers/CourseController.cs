@@ -8,13 +8,21 @@ namespace CourseApp.Controllers
     // localhost:5000/course
     public class CourseController : Controller
     {
-        // action method
+         // action method
         // localhost:5000/course/index => course/index.cshtml
         public IActionResult Index()
         {
-            return View();
+            var kurs=new Course(){ Id=1, Name="Kurs1"};
+            ViewData["course"]=kurs;
+            ViewBag.course=kurs;
+            ViewBag.count=10;
+            return View(kurs);
         }
 
+        public ActionResult ByReleased(int year, int month){
+            return Content("year: "+year+" month: "+ month);
+        }
+       
         // localhost:5000/course/apply
         [HttpGet]
         public IActionResult Apply()
@@ -42,6 +50,17 @@ namespace CourseApp.Controllers
         public IActionResult Details(int courseid, string sortby)
         {
            return Content("id = " + courseid + " sort by : " + sortby);
+        }
+
+        public IActionResult CourseList(int? pageindex, string sortby)
+        {
+            if(!pageindex.HasValue)
+                pageindex=1;
+
+            if (string.IsNullOrWhiteSpace(sortby))
+                sortby="name";
+                return Content("pageindex = " + pageindex + " sort by : " + sortby);
+            
         }
 
         // localhost:5000/course/list => course/list.cshtml
