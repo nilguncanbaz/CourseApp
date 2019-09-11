@@ -18,8 +18,13 @@ using CourseApp.Models;
 
 #line default
 #line hidden
+#line 2 "C:\Users\TDO0005\Documents\GitHub\dotnet\Views\_ViewImports.cshtml"
+using dotnet.ViewModels;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"602bcc9b8c949972714b6def3d77dbbed72877a6", @"/Views/Home/Index.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b2c5954ad745c84f09486a3bf06d76423bfbe838", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f664a3d6edbdad3d9d115291b54ff4eaf43636ba", @"/Views/_ViewImports.cshtml")]
     public class Views_Home_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<dynamic>
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("rel", new global::Microsoft.AspNetCore.Html.HtmlString("stylesheet"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -56,7 +61,7 @@ using CourseApp.Models;
             WriteLiteral("<!DOCTYPE html>\r\n<html>\r\n");
             EndContext();
             BeginContext(25, 337, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "602bcc9b8c949972714b6def3d77dbbed72877a65124", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "602bcc9b8c949972714b6def3d77dbbed72877a65259", async() => {
                 BeginContext(31, 276, true);
                 WriteLiteral(@"
     <meta charset=""utf-8"">
@@ -67,7 +72,7 @@ using CourseApp.Models;
     ");
                 EndContext();
                 BeginContext(307, 46, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "602bcc9b8c949972714b6def3d77dbbed72877a65793", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagOnly, "602bcc9b8c949972714b6def3d77dbbed72877a65928", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -101,7 +106,7 @@ using CourseApp.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(364, 609, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "602bcc9b8c949972714b6def3d77dbbed72877a67922", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "602bcc9b8c949972714b6def3d77dbbed72877a68057", async() => {
                 BeginContext(370, 174, true);
                 WriteLiteral("   \r\n    <div class=\"container m-4\">\r\n        <div class=\"card max-auto\" style=\"width:500px;\">\r\n            <div class=\"card-header\">\r\n              <h4>\r\n                   ");
                 EndContext();
@@ -126,7 +131,7 @@ using CourseApp.Models;
                 WriteLiteral(", nasılsın ?\r\n              </h4>  \r\n            </div>\r\n            <div class=\"card-body\">\r\n                <div class=\"cadr-text\">\r\n                    <p>Umarım kurslarımızdan memnunsunuzdur...</p> \r\n                    ");
                 EndContext();
                 BeginContext(803, 85, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "602bcc9b8c949972714b6def3d77dbbed72877a69428", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "602bcc9b8c949972714b6def3d77dbbed72877a69563", async() => {
                     BeginContext(873, 11, true);
                     WriteLiteral("Başvuru Yap");
                     EndContext();

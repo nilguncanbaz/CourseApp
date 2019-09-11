@@ -1,6 +1,8 @@
 using System.Linq;
 using CourseApp.Models;
+using dotnet.ViewModels;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 
 namespace CourseApp.Controllers
 {
@@ -12,11 +14,20 @@ namespace CourseApp.Controllers
         // localhost:5000/course/index => course/index.cshtml
         public IActionResult Index()
         {
-            var kurs=new Course(){ Id=1, Name="Kurs1"};
-            ViewData["course"]=kurs;
-            ViewBag.course=kurs;
-            ViewBag.count=10;
-            return View(kurs);
+            var kurs = new Course() { Id = 1, Name = "Kurs 1" };
+
+            var ogrenciler = new List<Student>()
+            {
+                new Student() { Name = "Nilgün" },
+                new Student() { Name = "Canbaz" }
+            };
+
+            var viewmodel = new CourseStudentsViewModel();
+
+            viewmodel.Course = kurs;
+            viewmodel.Students = ogrenciler;
+            
+            return View(viewmodel);
         }
 
         public ActionResult ByReleased(int year, int month){
@@ -33,7 +44,7 @@ namespace CourseApp.Controllers
         // localhost:5000/course/apply method:POST
         // Name=value&Email=value&Phone=value&Confirm=value
         [HttpPost]
-        public IActionResult Apply(Student student)
+        public IActionResult Apply(StudentResponse student)
         {
             // Model Binding
             if(ModelState.IsValid){

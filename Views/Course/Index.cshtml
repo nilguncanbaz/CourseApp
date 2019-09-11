@@ -1,4 +1,7 @@
-@model Course
+@model CourseStudentsViewModel
+@{
+    Layout = null;
+}
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,11 +11,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">  
 </head>
 <body>
+      <h1>@Model.Course.Name</h1>
 
-    <h1>@(((Course)ViewData["course"]).Name)</h1>
-    <h1>@(((Course)ViewBag.course))</h1>
-    <h1>@ViewBag.count</h1>
-    <h2>@Model.Name </h2> 
+    <ul>
+        @foreach (var item in Model.Students)
+        {
+            <li>
+                @item.Name
+            </li>
+        }
+    </ul>
     
 </body>
 </html>

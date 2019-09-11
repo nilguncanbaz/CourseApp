@@ -18,8 +18,13 @@ using CourseApp.Models;
 
 #line default
 #line hidden
+#line 2 "C:\Users\TDO0005\Documents\GitHub\dotnet\Views\_ViewImports.cshtml"
+using dotnet.ViewModels;
+
+#line default
+#line hidden
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"ff06640994d5950f7a3c0969c9c632c99c234740", @"/Views/Course/Details.cshtml")]
-    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"b2c5954ad745c84f09486a3bf06d76423bfbe838", @"/Views/_ViewImports.cshtml")]
+    [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f664a3d6edbdad3d9d115291b54ff4eaf43636ba", @"/Views/_ViewImports.cshtml")]
     public class Views_Course_Details : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<Course>
     {
         #line hidden
@@ -49,7 +54,7 @@ using CourseApp.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n<html lang=\"en\">\r\n");
             EndContext();
             BeginContext(52, 207, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ff06640994d5950f7a3c0969c9c632c99c2347403216", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ff06640994d5950f7a3c0969c9c632c99c2347403351", async() => {
                 BeginContext(58, 194, true);
                 WriteLiteral("\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <meta http-equiv=\"X-UA-Compatible\" content=\"ie=edge\">\r\n    <title>Document</title>\r\n");
                 EndContext();
@@ -69,7 +74,7 @@ using CourseApp.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(261, 139, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ff06640994d5950f7a3c0969c9c632c99c2347404608", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "ff06640994d5950f7a3c0969c9c632c99c2347404743", async() => {
                 BeginContext(267, 20, true);
                 WriteLiteral("\r\n    <p></p>name:  ");
                 EndContext();
