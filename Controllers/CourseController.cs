@@ -6,7 +6,6 @@ using System.Collections.Generic;
 
 namespace CourseApp.Controllers
 {
-
     // localhost:5000/course
     public class CourseController : Controller
     {
@@ -19,7 +18,8 @@ namespace CourseApp.Controllers
             var ogrenciler = new List<Student>()
             {
                 new Student() { Name = "Nilgün" },
-                new Student() { Name = "Canbaz" }
+                new Student() { Name = "Canbaz" },
+                new Student() { Name = "Can" }
             };
 
             var viewmodel = new CourseStudentsViewModel();
