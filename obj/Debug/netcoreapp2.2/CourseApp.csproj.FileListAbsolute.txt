@@ -59,3 +59,4 @@ C:\Users\TDO0005\Documents\GitHub\dotnet\obj\Debug\netcoreapp2.2\CourseApp.Razor
 C:\Users\TDO0005\Documents\GitHub\dotnet\obj\Debug\netcoreapp2.2\CourseApp.Views.pdb
 C:\Users\TDO0005\Documents\GitHub\dotnet\obj\Debug\netcoreapp2.2\CourseApp.csproj.CopyComplete
 C:\Users\TDO0005\Documents\GitHub\dotnet\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_Menu.g.cshtml.cs
+C:\Users\TDO0005\Documents\GitHub\dotnet\obj\Debug\netcoreapp2.2\Razor\Views\Shared\Components\Menu\Default.g.cshtml.cs
